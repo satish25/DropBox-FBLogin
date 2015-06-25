@@ -14,6 +14,12 @@
 		292CE8C11B3BBD400042B575 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292CE8C01B3BBD400042B575 /* Images.xcassets */; };
 		292CE8C41B3BBD400042B575 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292CE8C21B3BBD400042B575 /* LaunchScreen.xib */; };
 		292CE8D01B3BBD400042B575 /* FaceBookLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 292CE8CF1B3BBD400042B575 /* FaceBookLoginTests.m */; };
+		292CE8E21B3BBE170042B575 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292CE8DF1B3BBE170042B575 /* FBSDKShareKit.framework */; };
+		292CE8E31B3BBE170042B575 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292CE8E01B3BBE170042B575 /* FBSDKLoginKit.framework */; };
+		292CE8E41B3BBE170042B575 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292CE8E11B3BBE170042B575 /* FBSDKCoreKit.framework */; };
+		292CE8E61B3BDB5B0042B575 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292CE8E51B3BDB5B0042B575 /* DropboxSDK.framework */; };
+		292CE8E81B3BDB700042B575 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292CE8E71B3BDB700042B575 /* Security.framework */; };
+		292CE8EA1B3BDB7C0042B575 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292CE8E91B3BDB7C0042B575 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,12 @@
 		292CE8C91B3BBD400042B575 /* FaceBookLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceBookLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		292CE8CE1B3BBD400042B575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		292CE8CF1B3BBD400042B575 /* FaceBookLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceBookLoginTests.m; sourceTree = "<group>"; };
+		292CE8DF1B3BBE170042B575 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		292CE8E01B3BBE170042B575 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		292CE8E11B3BBE170042B575 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		292CE8E51B3BDB5B0042B575 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		292CE8E71B3BDB700042B575 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		292CE8E91B3BDB7C0042B575 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292CE8EA1B3BDB7C0042B575 /* QuartzCore.framework in Frameworks */,
+				292CE8E81B3BDB700042B575 /* Security.framework in Frameworks */,
+				292CE8E61B3BDB5B0042B575 /* DropboxSDK.framework in Frameworks */,
+				292CE8E31B3BBE170042B575 /* FBSDKLoginKit.framework in Frameworks */,
+				292CE8E41B3BBE170042B575 /* FBSDKCoreKit.framework in Frameworks */,
+				292CE8E21B3BBE170042B575 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +81,12 @@
 		292CE8A71B3BBD400042B575 = {
 			isa = PBXGroup;
 			children = (
+				292CE8E91B3BDB7C0042B575 /* QuartzCore.framework */,
+				292CE8E71B3BDB700042B575 /* Security.framework */,
+				292CE8E51B3BDB5B0042B575 /* DropboxSDK.framework */,
+				292CE8DF1B3BBE170042B575 /* FBSDKShareKit.framework */,
+				292CE8E01B3BBE170042B575 /* FBSDKLoginKit.framework */,
+				292CE8E11B3BBE170042B575 /* FBSDKCoreKit.framework */,
 				292CE8B21B3BBD400042B575 /* FaceBookLogin */,
 				292CE8CC1B3BBD400042B575 /* FaceBookLoginTests */,
 				292CE8B11B3BBD400042B575 /* Products */,
@@ -347,6 +371,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/satheesh/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = FaceBookLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +386,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/satheesh/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = FaceBookLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +450,7 @@
 				292CE8D51B3BBD400042B575 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		292CE8D61B3BBD400042B575 /* Build configuration list for PBXNativeTarget "FaceBookLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +459,7 @@
 				292CE8D81B3BBD400042B575 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
